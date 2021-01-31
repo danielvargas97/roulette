@@ -1,16 +1,19 @@
 package com.example.demo.models;
 
 import java.util.Random;
+import java.util.Date;
 
 public class Roulette {
 	private String id;
 	private int number;
 	private int state;
+	private Date openingDate;
+	private Date closingDate;
 	
 	private final int MAX_NUMBER = 37;
 	
 	public Roulette() {
-		
+		this.state = 0;
 	}
 	public int getState() {
 		return state;

@@ -1,27 +1,14 @@
 package com.example.demo.models;
 
-public class Bet {
-    private String id;
-    private int cash;
-    private int winner_bet;
+public interface Bet {
 
-    public Bet() {
+    public float getBetResult();
+    public void setBetResult(int roulette_result);
 
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public int getCash() {
-        return cash;
-    }
-
-    public void setCash(int cash) {
-        this.cash = cash;
-    }
+    public String getId();
+    public void setId(String id);
+    public float getCash();
+    public void setCash(float cash);
+    public boolean isWinnerBet();
+    public void setWinnerBet(boolean winnerBet);
 }
